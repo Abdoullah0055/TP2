@@ -1,0 +1,104 @@
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 24%;
+    background-image: linear-gradient(#26D98C, #D92673);
+
+}
+
+div.gallery:last-child {
+    background-image: linear-gradient(#D92673, #26D98C);
+
+}
+
+div.gallery:hover {
+    border: 3px solid #7a22a0;
+    transition: 0.3s ease;
+
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    float: left;
+    vertical-align: top;
+    opacity: 0.5;
+}
+
+div.gallery img:hover {
+    opacity: 1;
+    transition: 1s ease;
+}
+
+div.desc {
+    padding: 15px; 
+    text-align: center;
+}
+
+#conteneur {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: fit-content fit-content fit-content;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    height: auto;
+    
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+
+.liensGauche {
+    float: left;
+}
+
+.liensDroite {
+    float: right;
+}
+
+#header {
+    grid-area: header;
+    background-color: black;
+    padding: 10px;
+}
+
+#main {
+    grid-area: main;
+    padding: 5px;
+    display: flex;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: rgb(75, 74, 74);
+    text-align: right;
+    padding: 1%;
+}
+
+a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(60, 97, 219);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h4
+{
+padding-right: 10px;
+}
